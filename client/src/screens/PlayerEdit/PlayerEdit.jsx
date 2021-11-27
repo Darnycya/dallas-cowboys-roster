@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { useParams, Redirect } from 'react-router-dom'
 import { getPlayer, updatePlayer } from '../../services/players'
-import Logo from '../../components/Logo/Logo'
 import './PlayerEdit.css'
 
 const PlayerEdit = (props) => {
@@ -46,19 +45,18 @@ const PlayerEdit = (props) => {
 
     return (
       <>
-        <Logo />
             <div className="player-edit">
                 <div className="image-container">
                     <img className="player-detail-image" src={player.image} alt={player.name} />
                 </div>
-          <form autocomplete="off" className="edit-form" onSubmit={handleSubmit}>
+          <form autoComplete="off" className="edit-form" onSubmit={handleSubmit}>
           <input
                             className="input-image-link"
                             placeholder='Image URL'
                             value={player.image}
                             name='imgURL'
                             required
-              onChange={handleChange}
+                            onChange={handleChange}
               />
                     <input
                         className="input-name"

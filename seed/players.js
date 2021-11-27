@@ -525,7 +525,6 @@ const main = async () => {
     }
     ]
 
-
     await Player.insertMany(players)
     console.log("Created players!")
 }

@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import { Redirect } from 'react-router-dom'
 import { createPlayer } from '../../services/players'
-import Logo from '../../components/Logo/Logo'
 import "./PlayerCreate.css"
 
 const PlayerCreate = (props) => {
@@ -32,10 +31,10 @@ const PlayerCreate = (props) => {
     if (isCreated) {
         return <Redirect to={`/players`} />
     }
+  
     return (
        <>
-        <Logo />
-            <form autocomplete="off" className="create-form" onSubmit={handleSubmit}>
+            <form autoComplete="off" className="create-form" onSubmit={handleSubmit}>
                 <input
                     className="input-name"
                     placeholder='Name'

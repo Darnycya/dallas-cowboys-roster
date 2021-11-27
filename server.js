@@ -4,17 +4,12 @@ const logger = require('morgan')
 const PORT = process.env.PORT || 3000
 const db = require('./db/connection')
 const Player = require('./models/player')
-
-
 const cors = require('cors')
-
-
 const app = express()
 
 app.use(cors())
 app.use(bodyParser.json())
 app.use(logger('dev'))
-
 
 db.on('error', console.error.bind(console, 'MongoDB connection error:'))
 
@@ -22,10 +17,7 @@ app.listen(PORT, () => {
   console.log(`Express server listening on port ${PORT}`);
 })
 
-
-
 app.get('/', (req, res) => res.send("This is root!"))
-
 
 app.get('/players', async (req, res) => {
     try {
@@ -36,7 +28,6 @@ app.get('/players', async (req, res) => {
         res.status(500).json({ error: error.message })
     }
 })
-
 
 app.get('/players/:id', async (req, res) => {
     try {
@@ -49,7 +40,6 @@ app.get('/players/:id', async (req, res) => {
     }
 })
 
-
 app.post('/players', async (req, res) => {
     try {
         const player = new Player(req.body)
@@ -60,8 +50,6 @@ app.post('/players', async (req, res) => {
         res.status(500).json({ error: error.message })
     }
 })
-
-
 
 app.put('/players/:id', async (req, res) => {
     const { id } = req.params
@@ -75,7 +63,6 @@ app.put('/players/:id', async (req, res) => {
         res.status(200).json(player)
     })
 })
-
 
 app.delete('/players/:id', async (req, res) => {
     try {

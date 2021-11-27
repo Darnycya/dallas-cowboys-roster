@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react'
 import Player from '../../components/PlayerList/PlayerList'
 import Search from '../../components/Search/Search'
 import { getPlayers } from '../../services/players'
-import Logo from '../../components/Logo/Logo'
 import { Link } from 'react-router-dom';
 import './Players.css'
 
@@ -10,7 +9,6 @@ const Players = (props) => {
   const [allPlayers, setAllPlayers] = useState([])
   const [queriedPlayers, setQueriedPlayers] = useState([])
  
-
   useEffect(() => {
     const fetchPlayers = async () => {
       const players = await getPlayers()
@@ -19,8 +17,6 @@ const Players = (props) => {
     }
     fetchPlayers()
   }, [])
-
-
 
   const handleSearch = event => {
     const newQueriedPlayers = allPlayers.filter(player => player.name.toLowerCase().includes(event.target.value.toLowerCase()))
@@ -35,7 +31,6 @@ const Players = (props) => {
 
   return (
     <>
-     <Logo />
       <Search onSubmit={handleSubmit} onChange={handleSearch} />
       
       <div className="players">
