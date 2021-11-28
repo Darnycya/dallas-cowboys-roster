@@ -26,7 +26,12 @@ const Players = (props) => {
   const handleSubmit = event => event.preventDefault()
 
   const playersJSX = queriedPlayers.map((player, index) =>
-    <Player _id={player._id} name={player.name} image={player.image} position={player.position} jerseyNumber={player.jerseyNumber} key={index} />
+    <Player _id={player._id}
+      name={player.name}
+      image={player.image}
+      position={player.position}
+      jerseyNumber={player.jerseyNumber}
+      key={index} />
   )
 
   return (

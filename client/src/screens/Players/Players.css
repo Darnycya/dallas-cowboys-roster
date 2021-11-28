@@ -1,21 +1,28 @@
 .player-image {
   width: 650px;
-  height: 150px;
+  height: 140px;
   border: solid white 6px;
   margin-bottom: 10px;
   margin-left: 10px;
 }
 
 .players {
-  scrollbar-width: none;
-  margin-top: 50px;
-  margin-left: 40px;
   height: 350px;
-  overflow: scroll;
+  overflow-y: scroll;
+  width: 1370px; 
+  scrollbar-color: green;
 }
 
 ::-webkit-scrollbar {
-  display: none; 
+  background-color: rgb(230, 230, 230);
+  
+}
+ 
+::-webkit-scrollbar-thumb {
+  background-color: black;
+  border-radius: 25px;
+  width: 2px;
+
 }
 
 .add-button{
