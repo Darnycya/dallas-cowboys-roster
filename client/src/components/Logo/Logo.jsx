@@ -6,9 +6,9 @@ const Logo = () => {
     <div>
       <Link to='/players'>
         
-        <img className="logo"
+        <img className="logo-banner"
           alt="dallas-logo"
-          src="https://res.cloudinary.com/darnycya/image/upload/v1615691659/Dallas-Cowboys-PNG-Clipart_jmdnwz.png"></img>
+          src="https://res.cloudinary.com/darnycya/image/upload/v1638082372/Screen_Shot_2021-11-28_at_1.52.22_AM_gvkxex.png"></img>
         
         </Link>
     </div>

@@ -33,12 +33,13 @@ const Players = (props) => {
     <>
       <Search onSubmit={handleSubmit} onChange={handleSearch} />
       
+      Scroll to see full list of players.
       <div className="players">
         {playersJSX}
       </div>
 
       <Link to='/add-player'><button className="add-button">Add A Player</button></Link>
-    </>
+      </>
   )
 }
 

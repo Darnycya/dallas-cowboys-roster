@@ -13,10 +13,18 @@
 button {
   background-color: white;
   border-radius: 25px;
+  border: none;
+  text-decoration: none;
 }
 
-.edit-button {
+.edit-link {
   text-decoration: none;
+  color: black;
+}
+
+.delete-link {
+  text-decoration: none;
+  color: black;
 }
 
 @media all and (max-width: 600px) {

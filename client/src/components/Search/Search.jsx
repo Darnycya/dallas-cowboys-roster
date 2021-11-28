@@ -2,7 +2,8 @@ import React from 'react'
 import './Search.css'
 
 const Search = (props) => {
-    return (
+  return (
+      <div className="search-background">
       <form autoComplete="off"
         className="search-form"
         onSubmit={(e) => props.onSubmit(e)}>
@@ -17,7 +18,8 @@ const Search = (props) => {
                 autoFocus
         />
         
-        </form>
+      </form>
+      </div>
     )
 }
 
