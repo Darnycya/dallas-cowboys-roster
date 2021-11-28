@@ -7,15 +7,15 @@
 }
 
 .players {
-  height: 350px;
+  height: 490px;
   overflow-y: scroll;
   width: 1370px; 
-  scrollbar-color: green;
+  display: block;
+  margin: 30px auto;
 }
 
 ::-webkit-scrollbar {
   background-color: rgb(230, 230, 230);
-  
 }
  
 ::-webkit-scrollbar-thumb {
@@ -26,10 +26,9 @@
 }
 
 .add-button{
-  margin-left: 690px;
-  margin-top:20px;
-  margin-bottom:20px;
   border: none;
+  display: block; 
+  margin: 0px auto;
 }
 
 
