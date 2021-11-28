@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
 
-const Player = (props) => {
+export default function Player(props) {
   
     return (
       <>
@@ -11,4 +11,3 @@ const Player = (props) => {
         </>
     )
 }
-export default Player

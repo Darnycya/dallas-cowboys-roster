@@ -3,7 +3,7 @@ import { Redirect } from 'react-router-dom'
 import { createPlayer } from '../../services/players'
 import "./PlayerCreate.css"
 
-const PlayerCreate = (props) => {
+export default function PlayerCreate(props) {
 
     const [player, setPlayer] = useState({
             name: '',
@@ -73,5 +73,3 @@ const PlayerCreate = (props) => {
         </>
     )
 }
-
-export default PlayerCreate

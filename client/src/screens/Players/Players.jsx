@@ -5,7 +5,7 @@ import { getPlayers } from '../../services/players'
 import { Link } from 'react-router-dom';
 import './Players.css'
 
-const Players = (props) => {
+export default function Players(props) {
   const [allPlayers, setAllPlayers] = useState([])
   const [queriedPlayers, setQueriedPlayers] = useState([])
  
@@ -48,5 +48,3 @@ const Players = (props) => {
       </>
   )
 }
-
-export default Players

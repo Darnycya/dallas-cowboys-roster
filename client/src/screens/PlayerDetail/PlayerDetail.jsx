@@ -3,7 +3,7 @@ import { getPlayer, deletePlayer } from '../../services/players'
 import { useParams, Link } from 'react-router-dom'
 import './PlayerDetail.css';
 
-const PlayerDetail = (props) => {
+export default function PlayerDetail(props) {
 
     const [player, setPlayer] = useState(null)
     const [isLoaded, setLoaded] = useState(false)
@@ -43,5 +43,3 @@ const PlayerDetail = (props) => {
         </>
     )
 }
-
-export default PlayerDetail

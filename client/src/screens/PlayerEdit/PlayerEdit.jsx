@@ -3,7 +3,7 @@ import { useParams, Redirect } from 'react-router-dom'
 import { getPlayer, updatePlayer } from '../../services/players'
 import './PlayerEdit.css'
 
-const PlayerEdit = (props) => {
+export default function PlayerEdit(props){
 
     const [player, setPlayer] = useState({
             name: '',
@@ -89,5 +89,3 @@ const PlayerEdit = (props) => {
        </>
     )
 }
-
-export default PlayerEdit

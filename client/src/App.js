@@ -8,7 +8,7 @@ import Footer from './components/Footer/Footer'
 import { Route } from 'react-router-dom'
 import Logo from './components/Logo/Logo'
 
-const App = () => {
+export default function App() {
   return (
     <div className="app">
       <Route path="/" component={Logo}/>
@@ -22,5 +22,3 @@ const App = () => {
     </div>
   )
 }
-
-export default App

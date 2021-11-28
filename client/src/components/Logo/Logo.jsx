@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './Logo.css'
 
-const Logo = () => {
+export default function Logo() {
   return (
       <Link to='/players'>
         <img className="logo-banner"
@@ -11,5 +11,3 @@ const Logo = () => {
         </Link>
   )
 }
-
-export default Logo

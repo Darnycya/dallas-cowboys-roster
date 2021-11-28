@@ -1,7 +1,7 @@
 import React from 'react'
 import './Search.css'
 
-const Search = (props) => {
+export default function Search(props) {
   return (
       <div className="search-background">
       <form autoComplete="off"
@@ -22,5 +22,3 @@ const Search = (props) => {
       </div>
     )
 }
-
-export default Search
