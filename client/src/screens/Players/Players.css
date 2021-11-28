@@ -7,7 +7,7 @@
 }
 
 .players {
-  height: 490px;
+  height: 350px;
   overflow-y: scroll;
   width: 1370px; 
   display: block;
