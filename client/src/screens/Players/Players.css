@@ -1,15 +1,14 @@
 .player-image {
-  width: 650px;
-  height: 140px;
+  width: 700px;
+  height: 180px;
   border: solid white 6px;
   margin-bottom: 10px;
   margin-left: 10px;
 }
 
 .players {
-  height: 350px;
   overflow-y: scroll;
-  width: 1370px; 
+  width: 100%; 
   display: block;
   margin: 30px auto;
 }
