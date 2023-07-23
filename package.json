@@ -1,5 +1,5 @@
 {
-  "name": "dallas-cowboys-api",
+  "name": "dallas-cowboys-roster",
   "version": "1.0.0",
   "description": "An api of the Dallas Cowboys 2020 roster",
   "main": "index.js",
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://git.generalassemb.ly/darnycya/dallas-cowboys-roster-api"
+    "url": "https://github.com/Darnycya/dallas-cowboys-roster"
   },
   "keywords": [
     "Dallas",

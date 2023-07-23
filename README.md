@@ -4,7 +4,7 @@
   <img src="https://media.giphy.com/media/0hmpK3WiIsTXJ9jo7R/giphy.gif"></img>
   </p>
   
-The Dallas Cowboys Roster Editor is a full CRUD React app to update the Dallas Cowboy Roster <a href="https://dallas-api.herokuapp.com/">API</a> I created for the <a href="https://github.com/Darnycya/Dallas-Cowboys-Calculator">Dallas Cowboys Calculator</a> that I also created. 
+The Dallas Cowboys Roster Editor is a full CRUD React app to update the Dallas Cowboy Roster <a href="https://dallas-cowboys-roster-89666b416610.herokuapp.com/">API</a> I created for the <a href="https://github.com/Darnycya/Dallas-Cowboys-Calculator">Dallas Cowboys Calculator</a> that I also created. 
 
 
 ## Link To Editer
@@ -31,7 +31,7 @@ updatedAt: "2021-03-12T01:21:19.372Z"
 ```
 import axios from 'axios'
 
-const apiUrl = `https://dallas-cowboys-roster.herokuapp.com`
+const apiUrl = `https://dallas-cowboys-roster-89666b416610.herokuapp.com/`
 
 export const getPlayers = async () => {
   try {

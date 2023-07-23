@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const apiUrl = `https://dallas-cowboys-roster.herokuapp.com`
+const apiUrl = `https://dallas-cowboys-roster-89666b416610.herokuapp.com/`
 
 export const getPlayers = async () => {
   try {
