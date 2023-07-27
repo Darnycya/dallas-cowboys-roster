@@ -33,7 +33,7 @@ export default function PlayerCreate(props) {
     }
   
     return (
-       <>
+        <div className="player-create">
             <form autoComplete="off" className="create-form" onSubmit={handleSubmit}>
                 <input
                     className="input-name"
@@ -69,7 +69,7 @@ export default function PlayerCreate(props) {
                     onChange={handleChange}
                 />
                 <button type='submit' className="submit-button">Submit</button>
-            </form>
-        </>
+          </form>
+          </div>
     )
 }
