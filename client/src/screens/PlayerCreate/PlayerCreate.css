@@ -1,16 +1,31 @@
-.create-form{
-  margin-top: 100px;
-  margin-left: 300px;
+.player-create {
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+  flex-direction: column;
+  align-items: center;
 }
 
-@media all and (max-width: 600px) {
+input {
+  margin: 10px;
+}
 
-  .create-form{
-    margin-top: 100px;
-    margin-left: 20px;
+iframe {
+  margin: 20px;
+  width: 650px;
+  height: 400px;
+}
+
+@media all and (max-width: 770px) {
+  iframe {
+    width: 450px;
+    height: 300px;
   }
+}
 
-  .submit-button{
-    margin-left: 270px;
+@media all and (max-width: 480px) {
+  iframe {
+    width: 350px;
+    height: 200px;
   }
 }

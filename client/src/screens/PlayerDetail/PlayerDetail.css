@@ -1,43 +1,21 @@
-.player-detail-image{
-  margin-left: 200px;
-  margin-top: 50px;
-  border: 10px white solid;
-  width: 980px;
-  height: 320px;
+.player-detail {
+  display: flex;
+  padding: 50px;
+  align-items: center;
+  flex-direction: column;
 }
 
-.button-container{
-  margin-left: 1100px;
+.player-detail-image {
+  border: 10px white solid;
+  width: 90%;
+  height: 50%;
+  margin-bottom: 50px;
 }
 
 button {
   background-color: white;
-  border-radius: 25px;
-  border: none;
+  border: 1px black solid;
   text-decoration: none;
-}
-
-.edit-link {
-  text-decoration: none;
+  margin-left: 10px;
   color: black;
-}
-
-.delete-link {
-  text-decoration: none;
-  color: black;
-}
-
-@media all and (max-width: 600px) {
-
-  .player-detail-image {
-    width: 355px;
-    height: 150px;
-    border: solid white 6px;
-    margin-left:4px;
-  }
-
-  .button-container{
-    margin-left: 300px;
-  }
-
 }

@@ -1,50 +1,54 @@
-import React, { useState, useEffect } from 'react'
-import Player from '../../components/PlayerList/PlayerList'
-import Search from '../../components/Search/Search'
-import { getPlayers } from '../../services/players'
-import { Link } from 'react-router-dom';
-import './Players.css'
+import React, { useState, useEffect } from "react";
+import Player from "../../components/PlayerList/PlayerList";
+import Search from "../../components/Search/Search";
+import { getPlayers } from "../../services/players";
+import { Link } from "react-router-dom";
+import "./Players.css";
 
 export default function Players(props) {
-  const [allPlayers, setAllPlayers] = useState([])
-  const [queriedPlayers, setQueriedPlayers] = useState([])
- 
+  const [allPlayers, setAllPlayers] = useState([]);
+  const [queriedPlayers, setQueriedPlayers] = useState([]);
+
   useEffect(() => {
     const fetchPlayers = async () => {
-      const players = await getPlayers()
-      setAllPlayers(players)
-      setQueriedPlayers(players)
-    }
-    fetchPlayers()
-  }, [])
+      const players = await getPlayers();
+      setAllPlayers(players);
+      setQueriedPlayers(players);
+    };
+    fetchPlayers();
+  }, []);
 
-  const handleSearch = event => {
-    const newQueriedPlayers = allPlayers.filter(player => player.name.toLowerCase().includes(event.target.value.toLowerCase()))
-    setQueriedPlayers(newQueriedPlayers)
-  }
+  const handleSearch = (event) => {
+    const newQueriedPlayers = allPlayers.filter((player) =>
+      player.name.toLowerCase().includes(event.target.value.toLowerCase())
+    );
+    setQueriedPlayers(newQueriedPlayers);
+  };
 
-  const handleSubmit = event => event.preventDefault()
+  const handleSubmit = (event) => event.preventDefault();
 
-  const playersJSX = queriedPlayers.map((player, index) =>
-    <Player _id={player._id}
+  const playersJSX = queriedPlayers.map((player, index) => (
+    <Player
+      _id={player._id}
       name={player.name}
       image={player.image}
       position={player.position}
       jerseyNumber={player.jerseyNumber}
-      key={index} />
-  )
+      key={index}
+    />
+  ));
 
   return (
     <>
       <Search onSubmit={handleSubmit} onChange={handleSearch} />
-      
-      <div className="players-container">
-      <div className="players">
-        {playersJSX}
-      </div>
 
-        <Link to='/add-player'><button className="add-button">Add A Player</button></Link>
-        </div>
-      </>
-  )
+      <div className="players-container">
+        <div className="players">{playersJSX}</div>
+
+        <Link to="/add-player">
+          <button className="add-button">Add A Player</button>
+        </Link>
+      </div>
+    </>
+  );
 }
